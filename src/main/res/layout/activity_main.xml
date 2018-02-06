@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <TextView
+        android:id="@+id/success_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+            android:text="CHEMISTRY"
+            android:textColor="@color/primaryText"
+            android:textSize="34sp" />
+
+    <Button
+        android:id="@+id/main_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="206dp"
+        android:onClick="openActivity2"
+        android:text="START QUIZ"
+        android:textSize="34sp"
+        android:background="@color/colorPrimaryDark"/>
+    </RelativeLayout>

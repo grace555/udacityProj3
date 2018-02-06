@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quiz1.Main12Activity">
+
+    <ImageView
+        android:id="@+id/android_cookie_image_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="61dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tick1" />
+
+    <TextView
+        android:id="@+id/success_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/android_cookie_image_view"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp"
+        android:layout_toEndOf="@+id/android_cookie_image_view"
+        android:layout_toRightOf="@+id/android_cookie_image_view"
+        android:textColor="@color/primaryText"
+        android:textSize="34sp"
+        android:text="success!"/>
+
+    <ImageView
+        android:id="@+id/untick_image_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/android_cookie_image_view"
+        android:layout_alignStart="@+id/android_cookie_image_view"
+        android:layout_below="@+id/android_cookie_image_view"
+        android:layout_marginTop="48dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/untick1" />
+
+    <TextView
+        android:id="@+id/fail_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/untick_image_view"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_toEndOf="@+id/untick_image_view"
+        android:layout_toRightOf="@+id/untick_image_view"
+        android:text="Fail"
+        android:textColor="@color/primaryText"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/untick_image_view"
+        android:layout_alignStart="@+id/untick_image_view"
+        android:layout_below="@+id/untick_image_view"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="38dp"
+        android:text="Your final score"
+        android:textColor="@color/primaryText"
+        android:textSize="34sp" />
+    <Button
+        android:id="@+id/home"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+
+        android:layout_alignLeft="@+id/untick_image_view"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/untick_image_view"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/home1"
+        android:onClick="home"/>
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+
+        android:layout_alignR="@+id/home"
+        android:layout_alignBottom="@+id/home"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:background="@drawable/share1" />
+
+</RelativeLayout>
